@@ -30,7 +30,7 @@ def gradientDescent(X, y, theta, alpha, iters):
 
     return theta, cost
 
-path = os.getcwd() + '/data.csv'
+path = os.getcwd() + '/data2.txt'
 data = pd.read_csv(path, header=None, names=['km', 'price'], skiprows = 1)
 data.head()
 # print (data)

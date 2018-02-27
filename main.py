@@ -32,7 +32,7 @@ def main():
     #Load the dataset
     # data = loadtxt('data.csv', delimiter=',')
     # data = pd.read_csv('data.csv', name = ['km', 'price'])
-    data = genfromtxt('data.csv', delimiter=',', skip_header=1)
+    data = genfromtxt('data2.txt', delimiter=',', skip_header=1)
     # print data
     #Plot the data
     # scatter(data[:, 0], data[:, 1], marker='km', c='price')
