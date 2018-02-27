@@ -16,7 +16,7 @@ def compute_cost(X, y, theta):
 def gradient_descent(X, y, theta, alpha, num_iters):
     m = y.size
     J_history = zeros((num_iters, 1))
-
+    print (X.dot(theta).flatten())
     for i in range(num_iters):
         pred = X.dot(theta).flatten()
         err1 = (pred - y) * X[:, 0]
@@ -50,9 +50,9 @@ def main():
     # print m
     #Add a column of ones to X (interception data)
     it = ones((m, 2))
-    print it
+    # print (it)
     it[:, 1] = X
-    print it
+    # print (it)
     #Initialize theta parameters
     theta = zeros((2, 1))
 
@@ -60,7 +60,7 @@ def main():
     iterations = 1500
     alpha = 0.01
     theta, J = gradient_descent(it, y, theta, alpha, iterations)
-    print theta
-    print J
+    # print (theta)
+    # print (J)
 if __name__ == '__main__':
     main()
